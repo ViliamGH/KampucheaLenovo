@@ -1,0 +1,130 @@
+/* @font-face {
+  font-family: "god";
+  src: url("/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: "god";
+  font-weight: 600px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "god"; */
+  /* font-weight: 600px; */
+  /* box-sizing: border-box; */
+}
+
+body {
+  /* background: url("/Laptop/background-body.jpg") fixed center; */
+  background-color: #f9f9f9;
+}
+
+p {
+  color: #c6c7c9;
+}
+
+/* Navbar */
+.navbar_style {
+  color: #f9f9f9;
+  transition: all 0.5s ease;
+}
+.navbar_style:hover {
+  color: #2c62aeff;
+  text-decoration: underline;
+}
+
+/* carousel-styling */
+.carousel img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.absolute-text-carousel {
+  height: 100%;
+  width: 500px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.absolute-text-carousel .carousel-item-text {
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+.absolute-text-carousel button {
+  background-color: #294e95;
+  color: #f9f9f9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .absolute-text-carousel {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    transform: none;
+    left: unset;
+    top: unset;
+    padding: 2em 1em 1em;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/* 3 card in fking difference content*/
+.support-style button {
+  background-color: #294e95ff;
+  color: #f4f4f4;
+  padding: 15px;
+}
+
+.support-style button:hover {
+  background-color: #294e95ff !important;
+  color: #f9f9f9 !important;
+}
+
+.support-style .support-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.support-style .support-text {
+  font-size: 12px;
+  margin-top: 20px;
+  color: #000;
+}
+
+/* 3 card in fking difference content2 */
+.support-style2 .card {
+  text-align: center;
+}
+
+.support-style2 .support-title2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000f;
+}
+
+.support-style2 .support-text2 {
+  height: 20px;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #000;
+}

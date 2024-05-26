@@ -1,0 +1,55 @@
+/* @font-face {
+  font-family: "god";
+  src: url("/Poppins/Poppins-Regular.ttf");
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "god"; */
+  /* font-weight: 600px; */
+  /* box-sizing: border-box; */
+}
+
+.list_style li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+.hover-list {
+  color: #9b9b9bff;
+  transition: all 0.2s linear;
+}
+.hover-list:hover {
+  color: dodgerblue;
+}
+.list-unstyled h5 {
+  font-size: medium;
+  font-weight: bold;
+  color: #294e95;
+}
+
+.list-unstyled {
+  font-size: small;
+  margin-top: 10px;
+}
+
+.list-unstyled li {
+  font-size: small;
+}
+
+.round {
+  margin-top: 80px;
+  background-color: #ededed;
+  color: #9b9b9bff;
+}
+
+@media only screen and (max-width: 900px) {
+  .round {
+    text-align: center;
+  }
+}

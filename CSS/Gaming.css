@@ -1,0 +1,629 @@
+/* @font-face {
+  font-family: "god";
+  src: url("/Poppins/Poppins-Regular.ttf");
+} */
+
+/* {
+  font-family: "god";
+  font-weight: 600px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "god"; */
+  /* font-weight: 600px; */
+  /* box-sizing: border-box; */
+}
+
+body {
+  background: url("https://p4-ofp.static.pub/ShareResource/segment/gaming/homepage/2023/image/LaptopDesktop-Background-2x-no-margin.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  color: #c6c7c9;
+}
+
+/* Navbar */
+.navbar_style {
+  color: #f9f9f9;
+  transition: all 0.5s ease;
+}
+.navbar_style:hover {
+  color: #2c62aeff;
+  text-decoration: underline;
+}
+
+/* first legion home page */
+.video-style {
+  width: 100%;
+  height: 100%;
+}
+
+/* relative on video */
+
+.lil-video .lil-middle {
+  width: 100%;
+  padding: 40px;
+  font-size: 10px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .lil-video .lil-middle {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    width: 100%;
+    transform: none;
+    left: unset;
+    top: -6px;
+    padding: 2em;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+.lil-video .lil-middle h1,
+h3,
+p {
+  text-align: center;
+  color: #f9f9f9;
+}
+
+/* card-container */
+.community-card {
+  background: url("https://p3-ofp.static.pub/ShareResource/segment/gaming/homepage/2023/image/Laptops-For-Gamers-BG-Hover.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.community-card .card-body {
+  height: 30vh;
+  text-align: center;
+}
+
+.community-card img {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.community-card img:hover {
+  transform: translateY(-50px);
+}
+
+.community-card .button-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.community-card .button-hover:hover {
+  background-color: #000;
+  color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+}
+
+.community-card .card-title {
+  margin-bottom: 50px;
+}
+
+.community-card .card-text {
+  font-size: 13px;
+}
+
+/* long image */
+.img-long img {
+  width: 100%;
+  height: 250px;
+}
+
+.img-long2 img {
+  width: 100%;
+  height: 250px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .img-long img {
+    content: url("https://p1-ofp.static.pub/ShareResource/na/landing-pages/gaming-storefront/sponsorship-merch-banners/lenovo-legion-9i-mobile.jpg");
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .img-long2 img {
+    content: url("https://p4-ofp.static.pub/ShareResource/na/landing-pages/gaming-storefront/sponsorship-merch-banners/lenovo-logitech-g502-mouse-mobile.jpg");
+  }
+}
+
+/* relative on img-long */
+.img-home-page img {
+  width: 25%;
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translate(0, 0);
+  padding: 1.5rem;
+  border: 0;
+  max-width: 20%;
+  max-height: 100%;
+}
+
+.img-home-page2 p {
+  width: 40%;
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(0, 0);
+  padding: 20px;
+  border: 0;
+  max-width: 50%;
+  max-height: 100%;
+  font-size: 13px;
+}
+
+.img-home img {
+  width: 25%;
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transform: translate(0, 0);
+  padding: 1.5rem;
+  border: 0;
+  max-width: 20%;
+  max-height: 100%;
+}
+
+.img-home2 p {
+  width: 40%;
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(0, 0);
+  padding: 20px;
+  border: 0;
+  max-width: 50%;
+  max-height: 100%;
+  font-size: 13px;
+}
+
+.img-home-page2 a {
+  text-decoration: underline;
+  color: #f9f9f9;
+}
+
+.img-home2 a {
+  text-decoration: underline;
+  color: #f9f9f9;
+}
+
+@media screen and (max-width: 650px) {
+  .img-home-page img {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .img-home-page2 p {
+    text-align: start;
+    width: 50%;
+    font-size: 10px;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    transform: translate(0, 0);
+  }
+}
+
+/* special cards */
+.specialCard {
+  background-color: #17191e;
+  width: 100%;
+  height: auto;
+}
+
+/* 2 cards */
+.left-text {
+  border-right: 1px solid #f4f4f4;
+  margin: 30px;
+  padding: 30px;
+  color: #f9f9f9;
+}
+
+.right-text {
+  margin: 30px;
+  padding: 30px;
+  color: #f9f9f9;
+}
+
+@media only screen and (max-width: 768px) {
+  .specialCard .text-wrapper {
+    border: none !important;
+    text-align: center;
+    margin: 0 auto;
+    color: #369983ff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .specialCard .left-text {
+    border: none !important;
+    text-align: center;
+    margin: 0 auto;
+    color: #369983ff;
+    margin-top: 50px;
+  }
+  .specialCard .left-text p {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+  .specialCard .right-text {
+    text-align: center;
+    margin: 0 auto;
+    color: #369983ff;
+  }
+}
+
+.specialCard .card {
+  overflow: hidden;
+  color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.specialCard .card .card-body {
+  padding: 50px;
+  height: 30vh;
+}
+
+.specialCard .card-1style {
+  transition: transform 1.5s ease;
+}
+
+.specialCard .card-2style {
+  transition: transform 1.5s ease;
+}
+
+.specialCard .card-1style:hover {
+  content: url("../Photo/Gaming/Setup-BYO.png");
+  transform: scale(1.2);
+}
+
+.specialCard .card-2style:hover {
+  content: url("../Photo/Gaming/Setup-PB.png");
+  transform: scale(1.2);
+}
+
+.specialCard .card .card-body .card-title {
+  height: 5vh;
+  font-size: 25px;
+  text-align: center;
+}
+
+.specialCard .card .card-body .card-text {
+  font-size: 13px;
+  margin-top: 20px;
+  border-bottom: 1px solid #000;
+  border-color: #f9f9f9;
+}
+
+/* gaming accessories */
+.gaming_accessories .card {
+  width: 100%;
+  height: 60vh;
+  margin-top: 20px;
+}
+
+.gaming_accessories .nextCard .card {
+  width: 100%;
+  height: 65vh;
+}
+
+.gaming_accessories img {
+  width: 80% !important;
+  margin: 0 auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gaming_accessories .khos-ke {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.gaming_accessories .card {
+  background: url("../Photo/backgroundHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f9f9f9;
+}
+
+@media only screen and (max-width: 768px) {
+  .gaming_accessories .nextCard .card {
+    height: 57vh;
+  }
+  .gaming_accessories .card {
+    height: 52vh;
+  }
+  .gaming_accessories img {
+    margin: 0 auto;
+    width: 60% !important;
+  }
+  .gaming_accessories .khos-ke {
+    width: 70% !important;
+  }
+}
+
+.gaming_accessories .card .card-title {
+  line-height: 20px;
+}
+
+.gaming_accessories .card a {
+  color: #f9f9f9;
+}
+
+.gaming_accessories .card:hover a {
+  text-decoration: underline;
+}
+
+.gaming_accessories .card:hover img {
+  transform: translateX(50px);
+}
+
+.gaming_accessories .card:hover .khos-ke {
+  transform: translateY(30px);
+}
+
+/* carousel 3 cards */
+.carousel img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  left: 10%;
+}
+
+/* button in card */
+.border-style-button button {
+  border-color: #f9f9f9;
+}
+
+.carousel-control-prev {
+  width: 8%;
+  font-size: 40px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel-control-prev {
+    width: 10%;
+    font-size: 30px;
+  }
+  .carousel-control-next {
+    width: 10%;
+    font-size: 30px;
+  }
+}
+
+/* pop up image */
+
+.setupPage {
+  width: 100%;
+  height: auto;
+  background-color: #17191e;
+}
+
+.container-popup-img .popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("/Photo/backgroundHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.container-popup-img .popup-img span {
+  color: #f9f9f9;
+  cursor: pointer;
+  font-weight: bolder;
+  position: absolute;
+  top: 10%;
+  right: 6%;
+  font-size: 50px;
+  z-index: 1;
+}
+
+.container-popup-img .popup-img img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* .container-popup-img .popup-img #statementImage {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 2;
+} */
+
+@media only screen and (max-width: 768px) {
+  .container-popup-img .popup-img img {
+    width: 95%;
+  }
+}
+
+/* help me decide */
+.yab-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-yab-yern2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+}
+
+.statement-yab-yern2 {
+  padding-right: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.statement-yab-yern2 p {
+  text-align: start;
+}
+
+@media only screen and (max-width: 1000px) {
+  .yab-container .statement-yab-yern2 {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0 !important;
+  }
+
+  .yab-container .img-yab-yern2 img {
+    width: 46%;
+    height: auto;
+  }
+}
+
+/* cardNumber 1,2,3 */
+.yab-container #cardNumber1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.yab-container #cardNumber1 .card {
+  height: 40vh;
+  background-color: #171717;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yab-container #cardNumber1 img {
+  transition: transform 0.5s ease;
+  width: 50%;
+  height: auto;
+}
+
+.yab-container #cardNumber1 .card .card-body p {
+  color: #f9f9f9;
+}
+
+/* 2 */
+.yab-container #cardNumber2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.yab-container #cardNumber2 .card {
+  height: 40vh;
+  background-color: #171717;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yab-container #cardNumber2 img {
+  transition: transform 0.5s ease;
+  width: 50%;
+  height: auto;
+}
+
+.yab-container #cardNumber2 .card .card-body p {
+  color: #f9f9f9;
+}
+
+/* 3 */
+.yab-container #cardNumber3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.yab-container #cardNumber3 .card {
+  height: 40vh;
+  background-color: #171717;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yab-container #cardNumber3 img {
+  transition: transform 0.5s ease;
+  width: 50%;
+  height: auto;
+}
+
+.yab-container #cardNumber3 .card .card-body p {
+  color: #f9f9f9;
+}
+
+/* total hover 3 cardNumber 1,2,3*/
+.yab-container #cardNumber1 img:hover {
+  transform: translateY(-30px);
+}
+
+.yab-container #cardNumber2 img:hover {
+  transform: translateY(-30px);
+}
+
+.yab-container #cardNumber3 img:hover {
+  transform: translateY(-30px);
+}
+
+@media only screen and (max-width: 768px) {
+  .yab-container #cardNumber1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yab-container #cardNumber2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yab-container #cardNumber3 {
+    display: flex;
+    flex-direction: column;
+  }
+}

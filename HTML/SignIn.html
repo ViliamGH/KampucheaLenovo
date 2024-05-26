@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        Sign In
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- boxicons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="../CSS/SignIn.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="icon" type="image/x-icon" href="../Favicon/favicon_io/android-chrome-512x512.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- Nav-Bar -->
+    <section class="sticky-top">
+        <nav loading="lazy" class="navbar navbar-expand-lg" style="background-color: #040d21ff; color: #f9f9f9;">
+            <div class="container-fluid px-3">
+                <a href="/HTML/Home.html">
+                    <img src="../../Photo/Lenovo_Logo.png" style="width: 100px; " alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                    style="background-color: #f9f9f9; color: #040d21ff;">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" style="background-color: #040d21ff; color: #f9f9f9;">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <a href="/HTML/Home.html">
+                                <img src="../Photo/Lenovo_Logo.png" style="width: 150px;" alt="">
+                            </a>
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body" style="background-color: #040d21ff; color: #f9f9f9;">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="https://www.facebook.com/ThePizzaCompanyCambodia/" target="_blank"
+                                    class="nav-link navbar_style">(+855): 23-880-880</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="container log-in-style d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-12">
+                <form action="#" class="m-auto mt-5 needs-validation" novalidate>
+                    <div class="text-center mb-4">
+                        <h2>Sign In</h2>
+                        <p class="text-dark">We've built a new experience allowing you to keep
+                            <br>
+                            track of your Lenovo products and order all in one
+                            <br>
+                            place. Plus, access your My Lenovo Rewards when
+                            <br>
+                            you join the FREE program.
+                        </p>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="validationTooltip01" autocomplete="off" required>
+                        <label for="floatingInput" for="validationTooltip01">Email</label>
+                        <div class="invalid-feedback fw-light">
+                            Email required with @gmail.com
+                        </div>
+                    </div>
+                    <div class="form-floating mt-5 mb-3 passwordIcon">
+                        <input type="password" class="form-control" id="validationTooltip02" autocomplete="off"
+                            required>
+                        <img src="/Photo/Login/eye-icons/eye-close.webp" alt="..." id="eyeicon">
+                        <label for="floatingInput" for="validationTooltip02">Password</label>
+                        <div class="invalid-feedback fw-light">
+                            Password must be 8 Digit!
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck1"
+                                autocomplete="off">
+                            <label class="form-check-label fw-light" for="invalidCheck1">
+                                Remember Me
+                            </label>
+                        </div>
+                        <div>
+                            <a href="#" class="fw-light">Forgot Password</a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label fw-light" for="invalidCheck2">
+                                Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                    <div class="animateButton">
+                        <button type="submit" class="btn w-100 p-3 mt-5 button1-style">
+                            Sign in
+                        </button>
+                    </div>
+                </form>
+                <hr>
+                <div class="mt-4 text-center">
+                    <h5 class="mb-5 text-center">or Sign In With</h5>
+                    <div class="d-flex justify-content-center align-items-center gap-5 contenthuh">
+                        <a target="_blank"
+                            href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=34801672256.apps.googleusercontent.com&response_type=code&scope=email%20profile&state=gateway691191480&redirect_uri=https%3A%2F%2Fpassport.lenovo.com%2Fwauthen5%2FthirdGoogleCallBack&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow">
+                            <img src="/Photo/Login/Google.webp" alt="...">
+                        </a>
+                        <a target="_blank"
+                            href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=670056460093629&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22ff22cf38-6475-4ddd-8179-8220608e2bc5%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fpassport.lenovo.com%5C%2Fwauthen5%5C%2FthirdFaceBookCallBack%22&params%5Bresponse_type%5D=%22code%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%22gateway428952740%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3Alogin_platformization_read%22&source=gdp_delegated">
+                            <img src="/Photo/Login/Facebook.webp" alt="...">
+                        </a>
+                        <a target="_blank"
+                            href="https://login.live.com/oauth20_authorize.srf?client_id=000000004408A247&scope=wl.signin,wl.emails,wl.offline_access,wl.basic&response_type=code&state=gateway459352790&redirect_uri=https://passport.lenovo.com/wauthen5/thirdliveidcallback">
+                            <img src="/Photo/Login/Microsoft.webp" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bottomfixed">
+        <div class="d-flex justify-content-end align-items-center gap-3">
+            <p class="m-0">Need Help? Call: 23-880-880</p>
+            <button class="btn p-3" style="background-color: #294e95; color: #f9f9f9;"><i
+                    class="fa-regular fa-comment-dots" id="form-open"></i>&nbsp;&nbsp;Contact Us</button>
+        </div>
+    </footer>
+
+
+    <!-- Fontawesome script -->
+    <script src="https://kit.fontawesome.com/521359ca7b.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/usm/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="../Javascript/Form_Validation.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+/* @font-face {
+  font-family: "god";
+  src: url("/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: "god";
+  font-weight: 600px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "god"; */
+  /* font-weight: 600px; */
+  /* box-sizing: border-box; */
+}
+
+body {
+  /* background: url("/Laptop/background-body.jpg") fixed center; */
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar_style {
+  color: #f9f9f9;
+  transition: all 0.5s ease;
+}
+.navbar_style:hover {
+  color: #2c62aeff;
+  text-decoration: underline;
+}
+
+/* carousel-styling */
+.carousel img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.absolute-text-carousel {
+  height: 100%;
+  width: 500px;
+  padding-top: 50px;
+  padding-left: 140px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.absolute-text-carousel3 {
+  height: 100%;
+  width: 500px;
+  padding-top: 80px;
+  padding-left: 140px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.absolute-text-carousel .carousel-item-text {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .absolute-text-carousel {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transform: none;
+    left: unset;
+    top: unset;
+    padding: 2em 1em 1em;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .absolute-text-carousel3 {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transform: none;
+    left: unset;
+    top: unset;
+    padding: 2em 1em 1em;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+/* button in card */
+.border-style-button button {
+  border-color: #f9f9f9;
+}
+
+.carousel-control-prev {
+  width: 8%;
+  font-size: 40px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel-control-prev {
+    width: 10%;
+    font-size: 30px;
+  }
+  .carousel-control-next {
+    width: 10%;
+    font-size: 30px;
+  }
+}
+
+/*  */
+.third-style a {
+  color: #3e8ddd;
+  font-weight: bolder;
+  transition: line-height 0.3s;
+}
+
+.third-style a:hover {
+  text-decoration: underline;
+  color: #3e8ddd;
+  font-weight: bolder;
+}
+
+.third-style .third-inside-style {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.third-style .third-inside-style p {
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+/* cards */
+
+.third-style .card-text {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.third-style .service-style {
+  background-color: #f4f4f4;
+}
+
+/* video */
+.video-style {
+  width: 100%;
+  height: 500px;
+}
+
+/*  */
+.setupPage {
+  width: 100%;
+  height: auto;
+  background-color: #17191e;
+}
+
+.container-popup-img .popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.container-popup-img .popup-img iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#closeButton {
+  color: #f9f9f9;
+  cursor: pointer;
+  font-weight: bolder;
+  position: absolute;
+  top: 10%;
+  right: 6%;
+  font-size: 50px;
+  z-index: 1;
+}
