@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viliamlenovo.vercel.app/sitemap.xml
